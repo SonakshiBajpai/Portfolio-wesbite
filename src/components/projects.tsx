@@ -7,7 +7,9 @@ import {
   SiNodedotjs,
   SiPrisma,
   SiReact,
+  SiRedux,
   SiTailwindcss,
+  SiTypescript,
 } from 'react-icons/si'
 import { DirectionAwareHover } from './ui/direction-aware-hover'
 import { cn } from '@/utils/cn'
@@ -25,6 +27,48 @@ const projects = [
     tech: [SiNodedotjs, SiReact, SiMongodb, SiExpress],
     link: 'https://github.com/Ashish-Bind/Accomodation-Rental',
     cover: '/project-2.png',
+    background: 'bg-green-300/30',
+  },
+  {
+    title: 'MERN Ecommerce',
+    tech: [SiNodedotjs, SiReact, SiMongodb, SiExpress],
+    link: 'https://mern-ecommerce-ashish.vercel.app/',
+    cover: '/project-3.png',
+    background: 'bg-green-300/30',
+  },
+  {
+    title: 'MERN Blog',
+    tech: [SiNodedotjs, SiReact, SiMongodb, SiExpress],
+    link: 'https://github.com/Ashish-Bind/Blog-MERN-Stack-Project',
+    cover: '/project-4.png',
+    background: 'bg-green-300/30',
+  },
+  {
+    title: 'React & Typescript Todo',
+    tech: [SiReact, SiTypescript],
+    link: 'https://typescript-todo-react-ashish.vercel.app/',
+    cover: '/project-5.png',
+    background: 'bg-green-300/30',
+  },
+  {
+    title: 'Lango - Learn languages',
+    tech: [SiReact, SiTypescript, SiRedux, SiRedux],
+    link: 'https://lango-quiz.vercel.app/',
+    cover: '/project-6.png',
+    background: 'bg-green-300/30',
+  },
+  {
+    title: 'Movi',
+    tech: [SiReact, SiTypescript, SiRedux, SiTailwindcss],
+    link: 'https://movi-lhvc8v5sx-ashish-bind.vercel.app/',
+    cover: '/project-7.png',
+    background: 'bg-green-300/30',
+  },
+  {
+    title: 'Ecommerce Frontend',
+    tech: [SiReact, SiRedux],
+    link: 'https://react-ecommerce-1blu03umy-ashish-bind.vercel.app/',
+    cover: '/project-8.png',
     background: 'bg-green-300/30',
   },
 ]
