@@ -24,8 +24,8 @@ const socials = [
 
 const Navbar = () => {
   return (
-    <div className="p-5 flex justify-between items-center ">
-      <div className="text-2xl -rotate-2 underline underline-offset-8 decoration-cyan-400">
+    <div className="p-5 flex justify-between items-center border-b border-gray-900">
+      <div className="text-2xl -rotate-2 underline underline-offset-8 decoration-green-400">
         Ashish 💻
       </div>
       <div className="flex items-center gap-5">

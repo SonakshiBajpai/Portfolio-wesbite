@@ -34,42 +34,42 @@ const projects = [
     tech: [SiNodedotjs, SiReact, SiMongodb, SiExpress],
     link: 'https://mern-ecommerce-ashish.vercel.app/',
     cover: '/project-3.png',
-    background: 'bg-green-300/30',
+    background: 'bg-violet-300/30',
   },
   {
     title: 'MERN Blog',
     tech: [SiNodedotjs, SiReact, SiMongodb, SiExpress],
     link: 'https://github.com/Ashish-Bind/Blog-MERN-Stack-Project',
     cover: '/project-4.png',
-    background: 'bg-green-300/30',
+    background: 'bg-yellow-300/30',
   },
   {
     title: 'React & Typescript Todo',
     tech: [SiReact, SiTypescript],
     link: 'https://typescript-todo-react-ashish.vercel.app/',
     cover: '/project-5.png',
-    background: 'bg-green-300/30',
+    background: 'bg-blue-300/30',
   },
   {
     title: 'Lango - Learn languages',
     tech: [SiReact, SiTypescript, SiRedux, SiRedux],
     link: 'https://lango-quiz.vercel.app/',
     cover: '/project-6.png',
-    background: 'bg-green-300/30',
+    background: 'bg-purple-300/30',
   },
   {
     title: 'Movi',
     tech: [SiReact, SiTypescript, SiRedux, SiTailwindcss],
     link: 'https://movi-lhvc8v5sx-ashish-bind.vercel.app/',
     cover: '/project-7.png',
-    background: 'bg-green-300/30',
+    background: 'bg-violet-300/30',
   },
   {
     title: 'Ecommerce Frontend',
     tech: [SiReact, SiRedux],
     link: 'https://react-ecommerce-1blu03umy-ashish-bind.vercel.app/',
     cover: '/project-8.png',
-    background: 'bg-green-300/30',
+    background: 'bg-cyan-300/30',
   },
 ]
 
@@ -79,7 +79,7 @@ const Projects = () => {
       <h1 className="text-3xl underline underline-offset-8 decoration-cyan-400 -rotate-2 text-center font-bold">
         Projects 📦
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 pt-20 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 pt-20 gap-4 sm:px-16">
         {projects.map((project) => {
           return (
             <Link href={project.link} key={project.link}>

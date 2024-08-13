@@ -7,6 +7,8 @@ import {
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
+  SiPostgresql,
+  SiPython,
   SiReact,
   SiTailwindcss,
 } from 'react-icons/si'
@@ -46,5 +48,13 @@ export const projects = [
   {
     title: 'GitHub',
     icon: SiGit,
+  },
+  {
+    title: 'Python',
+    icon: SiPython,
+  },
+  {
+    title: 'PostgreSQL',
+    icon: SiPostgresql,
   },
 ]
