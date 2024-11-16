@@ -15,11 +15,6 @@ const socials = [
     label: 'Github',
     icon: SiGithub,
   },
-  {
-    link: '#',
-    label: 'X',
-    icon: SiX,
-  },
 ]
 
 const Navbar = () => {

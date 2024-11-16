@@ -1,7 +1,7 @@
-"use client";
-import React from "react";
-import { ContainerScroll } from "./ui/container-scroll-animation";
-import Image from "next/image";
+'use client'
+import React from 'react'
+import { ContainerScroll } from './ui/container-scroll-animation'
+import Image from 'next/image'
 
 export function ScrollPad() {
   return (
@@ -9,7 +9,7 @@ export function ScrollPad() {
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="text-4xl text-black dark:text-white">
+            <h1 className="text-4xl text-white">
               Projects 🚀 <br />
               <span className="text-xl md:text-[3rem] font-bold mt-1 leading-none">
                 says it all
@@ -28,5 +28,5 @@ export function ScrollPad() {
         />
       </ContainerScroll>
     </div>
-  );
+  )
 }
