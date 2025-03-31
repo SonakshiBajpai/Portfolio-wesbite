@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function WordsFlipper() {
   const words = [
-    "Software\u00A0Developer",
+    "Software\u00A0Engineer",
     "UX\u00A0Designer",
     "Debate\u00A0enthusiast",
   ];
