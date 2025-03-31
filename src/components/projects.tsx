@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 import {
   SiExpress,
   SiMongodb,
@@ -10,68 +10,68 @@ import {
   SiRedux,
   SiTailwindcss,
   SiTypescript,
-} from 'react-icons/si'
-import { DirectionAwareHover } from './ui/direction-aware-hover'
-import { cn } from '@/utils/cn'
+} from "react-icons/si";
+import { DirectionAwareHover } from "./ui/direction-aware-hover";
+import { cn } from "@/utils/cn";
 
 const projects = [
   {
-    title: 'SkillCraft',
+    title: "SkillCraft",
     tech: [SiNextdotjs, SiTailwindcss, SiPrisma, SiMongodb],
-    link: 'https://github.com/Ashish-Bind/SkillCraft',
-    cover: '/project-1.png',
-    background: 'bg-cyan-300/30',
+    link: "https://github.com/Ashish-Bind/SkillCraft",
+    cover: "/project-1.png",
+    background: "bg-cyan-300/30",
   },
   {
-    title: 'StayWise',
+    title: "StayWise",
     tech: [SiNodedotjs, SiReact, SiMongodb, SiExpress],
-    link: 'https://github.com/Ashish-Bind/Accomodation-Rental',
-    cover: '/project-2.png',
-    background: 'bg-green-300/30',
+    link: "https://github.com/Ashish-Bind/Accomodation-Rental",
+    cover: "/project-2.png",
+    background: "bg-green-300/30",
   },
   {
-    title: 'MERN Ecommerce',
+    title: "MERN Ecommerce",
     tech: [SiNodedotjs, SiReact, SiMongodb, SiExpress],
-    link: 'https://mern-ecommerce-ashish.vercel.app/',
-    cover: '/project-3.png',
-    background: 'bg-violet-300/30',
+    link: "https://mern-ecommerce-ashish.vercel.app/",
+    cover: "/project-3.png",
+    background: "bg-violet-300/30",
   },
   {
-    title: 'MERN Blog',
+    title: "MERN Blog",
     tech: [SiNodedotjs, SiReact, SiMongodb, SiExpress],
-    link: 'https://github.com/Ashish-Bind/Blog-MERN-Stack-Project',
-    cover: '/project-4.png',
-    background: 'bg-yellow-300/30',
+    link: "https://github.com/Ashish-Bind/Blog-MERN-Stack-Project",
+    cover: "/project-4.png",
+    background: "bg-yellow-300/30",
   },
   {
-    title: 'React & Typescript Todo',
+    title: "React & Typescript Todo",
     tech: [SiReact, SiTypescript],
-    link: 'https://typescript-todo-react-ashish.vercel.app/',
-    cover: '/project-5.png',
-    background: 'bg-blue-300/30',
+    link: "https://typescript-todo-react-ashish.vercel.app/",
+    cover: "/project-5.png",
+    background: "bg-blue-300/30",
   },
   {
-    title: 'Lango - Learn languages',
+    title: "Lango - Learn languages",
     tech: [SiReact, SiTypescript, SiRedux, SiRedux],
-    link: 'https://lango-quiz.vercel.app/',
-    cover: '/project-6.png',
-    background: 'bg-purple-300/30',
+    link: "https://lango-quiz.vercel.app/",
+    cover: "/project-6.png",
+    background: "bg-purple-300/30",
   },
   {
-    title: 'Movi',
+    title: "Movi",
     tech: [SiReact, SiTypescript, SiRedux, SiTailwindcss],
-    link: 'https://movi-lhvc8v5sx-ashish-bind.vercel.app/',
-    cover: '/project-7.png',
-    background: 'bg-violet-300/30',
+    link: "https://movi-lhvc8v5sx-ashish-bind.vercel.app/",
+    cover: "/project-7.png",
+    background: "bg-violet-300/30",
   },
   {
-    title: 'Ecommerce Frontend',
+    title: "Ecommerce Frontend",
     tech: [SiReact, SiRedux],
-    link: 'https://react-ecommerce-1blu03umy-ashish-bind.vercel.app/',
-    cover: '/project-8.png',
-    background: 'bg-cyan-300/30',
+    link: "https://react-ecommerce-1blu03umy-ashish-bind.vercel.app/",
+    cover: "/project-8.png",
+    background: "bg-cyan-300/30",
   },
-]
+];
 
 const Projects = () => {
   return (
@@ -83,7 +83,7 @@ const Projects = () => {
         {projects.map((project) => {
           return (
             <Link href={project.link} key={project.link}>
-              <div className={cn('p-5 rounded-md', project.background)}>
+              <div className={cn("p-5 rounded-md", project.background)}>
                 <DirectionAwareHover
                   imageUrl={project.cover}
                   imageClassName="w-full space-y-5 cursor-pointer"
@@ -91,18 +91,18 @@ const Projects = () => {
                   <h1 className="text-2xl space-y-2">{project.title}</h1>
                   <div className="flex gap-2">
                     {project.tech.map((icon, i) => {
-                      const Icon = icon
-                      return <Icon key={i} className="size-6" />
+                      const Icon = icon;
+                      return <Icon key={i} className="size-6" />;
                     })}
                   </div>
                 </DirectionAwareHover>
               </div>
             </Link>
-          )
+          );
         })}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

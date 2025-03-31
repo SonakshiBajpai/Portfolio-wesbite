@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
-import { LampContainer } from '@/components/ui/lamp'
-import React from 'react'
-import { motion } from 'framer-motion'
+import { LampContainer } from "@/components/ui/lamp";
+import React from "react";
+import { motion } from "framer-motion";
 
 const Lamp = () => {
   return (
@@ -13,17 +13,17 @@ const Lamp = () => {
         transition={{
           delay: 0.3,
           duration: 0.8,
-          ease: 'easeInOut',
+          ease: "easeInOut",
         }}
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight md:text-7xl"
       >
         <div>
-          Nice to meet you! 👋 <br /> I&apos;m Ashish <br />{' '}
+          Nice to meet you! 👋 <br /> I&apos;m Gaurav <br />{" "}
           <span className="border-b-4 border-yellow-500">a web developer.</span>
         </div>
       </motion.h1>
     </LampContainer>
-  )
-}
+  );
+};
 
-export default Lamp
+export default Lamp;

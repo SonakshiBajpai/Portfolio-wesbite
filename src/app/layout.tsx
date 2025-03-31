@@ -1,34 +1,34 @@
-import type { Metadata } from 'next'
-import { Space_Grotesk } from 'next/font/google'
-import './globals.css'
-import { ThemeProvider } from '@/components/theme-provider'
+import type { Metadata } from "next";
+import { Space_Grotesk } from "next/font/google";
+import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
 
-const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('http:localhost:3000/'),
+  metadataBase: new URL("http:localhost:3000/"),
   title: {
-    template: 'Ashish | Portfolio',
-    default: 'Ashish | Portfolio',
+    template: "Gaurav | Portfolio",
+    default: "Gaurav | Portfolio",
   },
   authors: {
-    name: 'ashish',
+    name: "Gaurav",
   },
-  description: 'Personal portfolio made using Next JS',
+  description: "Personal portfolio made using Next JS",
   openGraph: {
-    title: 'Ashish | Portfolio',
-    description: 'Personal portfolio made using Next JS',
-    siteName: 'Ashish | Portfolio',
-    images: '/website.png',
-    type: 'website',
+    title: "Gaurav | Portfolio",
+    description: "Personal portfolio made using Next JS",
+    siteName: "Gaurav | Portfolio",
+    images: "/website.png",
+    type: "website",
   },
-  keywords: ['portfolio', 'ashish', 'personal porfolio'],
-}
+  keywords: ["portfolio", "gaurav", "personal porfolio"],
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -43,5 +43,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
