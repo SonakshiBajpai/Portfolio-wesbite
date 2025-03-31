@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
-import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
+import { SiGithub, SiLeetcode, SiLinkedin, SiX } from "react-icons/si";
 
 const socials = [
   {
@@ -14,6 +14,11 @@ const socials = [
     link: "https://github.com/ikrgaurav",
     label: "Github",
     icon: SiGithub,
+  },
+  {
+    link: "https://leetcode.com/ikrgaurav",
+    label: "Leetcode",
+    icon: SiLeetcode,
   },
 ];
 
