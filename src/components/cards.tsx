@@ -1,9 +1,11 @@
-'use client'
+"use client";
 
-import { HoverEffect } from '@/components/ui/card-hover-effect'
+import { HoverEffect } from "@/components/ui/card-hover-effect";
 import {
+  SiCplusplus,
   SiExpress,
   SiGit,
+  SiGo,
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
@@ -11,50 +13,50 @@ import {
   SiPython,
   SiReact,
   SiTailwindcss,
-} from 'react-icons/si'
+} from "react-icons/si";
 
 export function CardHoverEffectDemo() {
   return (
     <div className="max-w-5xl mx-auto px-8">
       <HoverEffect items={projects} />
     </div>
-  )
+  );
 }
 export const projects = [
   {
-    title: 'React',
+    title: "React",
     icon: SiReact,
   },
   {
-    title: 'Next',
+    title: "Next",
     icon: SiNextdotjs,
   },
   {
-    title: 'MongoDB',
+    title: "MongoDB",
     icon: SiMongodb,
   },
   {
-    title: 'Node JS',
+    title: "Node JS",
     icon: SiNodedotjs,
   },
   {
-    title: 'Tailwind',
+    title: "Tailwind",
     icon: SiTailwindcss,
   },
   {
-    title: 'Express JS',
+    title: "Express JS",
     icon: SiExpress,
   },
   {
-    title: 'GitHub',
+    title: "GitHub",
     icon: SiGit,
   },
   {
-    title: 'Python',
-    icon: SiPython,
+    title: "C++",
+    icon: SiCplusplus,
   },
   {
-    title: 'PostgreSQL',
-    icon: SiPostgresql,
+    title: "Go",
+    icon: SiGo,
   },
-]
+];
