@@ -16,7 +16,7 @@ const socials = [
     icon: SiGithub,
   },
   {
-    link: "#",
+    link: "https://x.com/imkrg",
     label: "X",
     icon: SiX,
   },
