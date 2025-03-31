@@ -32,7 +32,7 @@ export function WordsFlipper() {
             <Link href="mailto:kkr2810@gmail.com">
               <ShimmerButton>Contact Me 📬</ShimmerButton>
             </Link>
-            <ShimmerButton onClick={handleHireMeClick}>
+            <ShimmerButton onClick={handleHireMeClick} variant="golden">
               Hire Me :) 🏆
             </ShimmerButton>
           </div>
