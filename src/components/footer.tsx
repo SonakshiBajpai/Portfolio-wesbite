@@ -24,21 +24,35 @@ const socials = [
 
 const Footer = () => {
   return (
-    <div className="p-5 flex flex-col justify-between items-center gap-5 mt-10">
-      <div className="text-lg -rotate-2 underline underline-offset-8 decoration-green-400">
-        Made with 💖 Gaurav
+    <footer className="border-t border-gray-800 bg-black">
+      <div className="max-w-7xl mx-auto px-6 py-12 md:flex md:items-center md:justify-between">
+        <div className="flex justify-center space-x-6 md:order-2">
+          {socials.map((social, i) => {
+            const Icon = social.icon;
+            return (
+              <Link
+                key={i}
+                href={social.link}
+                aria-label={social.label}
+                className="text-gray-400 hover:text-gray-300"
+              >
+                <Icon className="h-6 w-6 hover:text-cyan-300 hover:scale-110 transition-all" />
+              </Link>
+            );
+          })}
+        </div>
+        <div className="mt-8 md:mt-0 md:order-1 flex flex-col items-center md:items-start space-y-3">
+          <p className="text-center text-base text-gray-400">
+            <span className="bg-gradient-to-r from-purple-400 to-cyan-400 text-transparent bg-clip-text">
+              Made with 💖 by Gaurav
+            </span>
+          </p>
+          <p className="text-center text-sm text-gray-400">
+            © {new Date().getFullYear()} Gaurav. All rights reserved.
+          </p>
+        </div>
       </div>
-      <div className="flex items-center gap-5">
-        {socials.map((social, i) => {
-          const Icon = social.icon;
-          return (
-            <Link key={i} href={social.link} aria-label={social.label}>
-              <Icon className="text-2xl hover:text-cyan-300 hover:scale-110 transition-all" />
-            </Link>
-          );
-        })}
-      </div>
-    </div>
+    </footer>
   );
 };
 
