@@ -31,15 +31,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={spaceGrotesk.className}>
+    <html lang="en" className="overflow-x-hidden">
+      <body className={`${spaceGrotesk.className} overflow-x-hidden`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem={true}
           disableTransitionOnChange
         >
-          {children}
+          <div className="relative overflow-x-hidden">{children}</div>
         </ThemeProvider>
       </body>
     </html>

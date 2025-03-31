@@ -16,19 +16,26 @@ export function WordsFlipper() {
   };
 
   return (
-    <div className="h-[40rem] flex flex-col justify-center items-center px-4 gap-4">
-      <div className="text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400 text-center">
-        Hello there, Nice to meet you 👋
-      </div>
-      <div className="text-4xl mx-auto font-normal text-neutral-400 text-center">
-        I am Gaurav, a <FlipWords words={words} />
-        <div className="flex flex-col items-center gap-4 mt-4">
-          <Link href="mailto:kkr2810@gmail.com">
-            <ShimmerButton>Contact Me 📬</ShimmerButton>
-          </Link>
-          <ShimmerButton onClick={handleHireMeClick}>
-            Hire Me :) 🏆
-          </ShimmerButton>
+    <div className="w-full max-w-full overflow-hidden">
+      <div className="h-[30rem] flex flex-col justify-center items-center gap-4">
+        <div className="text-xl sm:text-3xl mx-auto font-normal text-neutral-600 dark:text-neutral-400 text-center">
+          Hello there, Nice to meet you 👋
+        </div>
+        <div className="text-xl sm:text-3xl mx-auto font-normal text-neutral-400 text-center max-w-full">
+          <div className="flex flex-col items-center gap-4">
+            <div>I am Gaurav, a</div>
+            <div className="relative w-full overflow-hidden flex justify-center">
+              <FlipWords words={words} className="max-w-full" />
+            </div>
+          </div>
+          <div className="flex flex-col items-center gap-4 mt-4">
+            <Link href="mailto:kkr2810@gmail.com">
+              <ShimmerButton>Contact Me 📬</ShimmerButton>
+            </Link>
+            <ShimmerButton onClick={handleHireMeClick}>
+              Hire Me :) 🏆
+            </ShimmerButton>
+          </div>
         </div>
       </div>
     </div>

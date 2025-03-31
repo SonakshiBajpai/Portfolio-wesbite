@@ -9,8 +9,8 @@ import SpotifyCard from "@/components/spotify";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-black overflow-x-hidden">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 relative overflow-x-hidden">
         <Navbar />
         <div className="w-full">
           <HighlightedHero />
@@ -21,10 +21,10 @@ export default function Home() {
           </h1>
           <CardHoverEffectDemo />
 
-          <div className="relative min-h-[600px] sm:min-h-[800px] group overflow-visible">
-            <div className="absolute inset-0 overflow-visible">
+          <div className="relative min-h-[600px] sm:min-h-[800px] group">
+            <div className="absolute inset-0">
               <Ripple
-                className="absolute inset-0 overflow-visible"
+                className="absolute inset-0"
                 mainCircleSize={400}
                 numCircles={12}
               />
