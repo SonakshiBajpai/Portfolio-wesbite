@@ -10,11 +10,6 @@ export function WordsFlipper() {
     "Debate\u00A0enthusiast",
   ];
 
-  const handleHireMeClick = () => {
-    window.location.href =
-      "https://drive.google.com/file/d/1-2aPhqL7tIqnmy2hlfOSyxep4vZ_DMzf/view?usp=sharing";
-  };
-
   return (
     <div className="w-full max-w-full overflow-hidden">
       <div className="h-[30rem] flex flex-col justify-center items-center gap-4">
@@ -32,7 +27,7 @@ export function WordsFlipper() {
             <Link href="mailto:Sonakshi.bajpai15@gmail.com">
               <ShimmerButton>Contact Me 📬</ShimmerButton>
             </Link>
-            <ShimmerButton onClick={handleHireMeClick} variant="golden">
+            <ShimmerButton variant="golden">
               Hire Me :) 🏆
             </ShimmerButton>
           </div>
