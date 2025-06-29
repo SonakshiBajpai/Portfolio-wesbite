@@ -8,21 +8,21 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("http:localhost:3000/"),
   title: {
-    template: "Gaurav | Portfolio",
-    default: "Gaurav | Portfolio",
+    template: "Sonakshi | Portfolio",
+    default: "Sonakshi | Portfolio",
   },
   authors: {
-    name: "Gaurav",
+    name: "Sonakshi",
   },
   description: "Personal portfolio made using Next JS",
   openGraph: {
-    title: "Gaurav | Portfolio",
+    title: "Sonakshi | Portfolio",
     description: "Personal portfolio made using Next JS",
-    siteName: "Gaurav | Portfolio",
+    siteName: "Sonakshi | Portfolio",
     images: "/website.png",
     type: "website",
   },
-  keywords: ["portfolio", "gaurav", "personal porfolio"],
+  keywords: ["portfolio", "sonakshi", "personal porfolio"],
 };
 
 export default function RootLayout({

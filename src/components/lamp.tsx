@@ -18,7 +18,7 @@ const Lamp = () => {
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight md:text-7xl"
       >
         <div>
-          Nice to meet you! 👋 <br /> I&apos;m Gaurav <br />{" "}
+          Nice to meet you! 👋 <br /> I&apos;m Sonakshi <br />{" "}
           <span className="border-b-4 border-yellow-500">a web developer.</span>
         </div>
       </motion.h1>

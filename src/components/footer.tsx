@@ -6,17 +6,17 @@ import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
 
 const socials = [
   {
-    link: "https://www.linkedin.com/in/krgm/",
+    link: "https://www.linkedin.com/in/bajpai-sonakshi/",
     label: "LinkedIn",
     icon: SiLinkedin,
   },
   {
-    link: "https://github.com/ikrgaurav",
+    link: "https://github.com/SonakshiBajpai",
     label: "Github",
     icon: SiGithub,
   },
   {
-    link: "https://x.com/imkrg",
+    link: "https://x.com/BajpaiSonakshi",
     label: "X",
     icon: SiX,
   },
@@ -44,11 +44,11 @@ const Footer = () => {
         <div className="mt-8 md:mt-0 md:order-1 flex flex-col items-center md:items-start space-y-3">
           <p className="text-center text-base text-gray-400">
             <span className="bg-gradient-to-r from-purple-400 to-cyan-400 text-transparent bg-clip-text">
-              Made with 💖 by Gaurav
+              Made with 💖 by Sonakshi
             </span>
           </p>
           <p className="text-center text-sm text-gray-400">
-            © {new Date().getFullYear()} Gaurav. All rights reserved.
+            © {new Date().getFullYear()} Sonakshi. All rights reserved.
           </p>
         </div>
       </div>

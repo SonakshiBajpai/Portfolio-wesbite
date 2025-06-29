@@ -4,9 +4,8 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 import {
   SiCplusplus,
   SiExpress,
+  SiFigma,
   SiGit,
-  SiGo,
-  SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
   SiPostgresql,
@@ -33,8 +32,8 @@ export const projects = [
     icon: SiNextdotjs,
   },
   {
-    title: "MongoDB",
-    icon: SiMongodb,
+    title: "SQL",
+    icon: SiPostgresql,
   },
   {
     title: "Node JS",
@@ -57,7 +56,7 @@ export const projects = [
     icon: SiCplusplus,
   },
   {
-    title: "Go",
-    icon: SiGo,
+    title: "Figma",
+    icon: SiFigma,
   },
 ];

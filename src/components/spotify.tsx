@@ -9,7 +9,7 @@ function SpotifyCard() {
       <div className="relative z-10 w-full max-w-[400px]">
         <iframe
           className="rounded-2xl shadow-2xl w-full"
-          src="https://open.spotify.com/embed/playlist/6VOrJ6CItPyDfyrOmbTwug?utm_source=generator"
+          src="https://open.spotify.com/embed/playlist/0cj48sijCRDJ3Hatx1k1vJ?utm_source=generator"
           height="352"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
